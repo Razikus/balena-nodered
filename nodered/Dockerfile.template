@@ -1,0 +1,10 @@
+ARG BALENA_MACHINE_NAME="%%BALENA_MACHINE_NAME%%"
+FROM balenalib/${BALENA_MACHINE_NAME}-node:10
+RUN install_packages python3
+RUN npm install -g --unsafe-perm node-red
+COPY entrypoint.sh /entrypoint.sh
+COPY settings.json /settings.json
+VOLUME /data
+
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
+

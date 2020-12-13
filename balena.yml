@@ -1,0 +1,18 @@
+version: "2"
+slug: "balena-node-red"
+name: "Node-RED"
+type: "sw.application"
+assets:
+  - url: "https://github.com/Razikus/balena-bluetooth-router"
+    name: "repository"
+  - url: "https://raw.githubusercontent.com/Razikus/balena-bluetooth-router/master/logo.png"
+    name: "logo"
+data:
+  description: "Node-RED with bundled Mosquitto Broker"
+  applicationEnvironmentVariables:
+    - DEVICE: 'hci0'
+  defaultDeviceType: "raspberry-pi"
+  supportedDeviceTypes:
+    - "raspberry-pi"
+    - "raspberry-pi2"
+    - "raspberrypi3"
