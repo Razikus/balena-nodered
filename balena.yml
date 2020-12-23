@@ -5,7 +5,7 @@ type: "sw.application"
 assets:
   - url: "https://github.com/Razikus/balena-nodered"
     name: "repository"
-  - url: "https://raw.githubusercontent.com/Razikus/balena-bluetooth-router/master/logo.png"
+  - url: "https://raw.githubusercontent.com/Razikus/balena-nodered/main/logo.png"
     name: "logo"
 data:
   description: "Node-RED with bundled Mosquitto Broker"
