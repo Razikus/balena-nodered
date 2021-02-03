@@ -1,14 +1,16 @@
-version: "2"
-slug: "balena-node-red"
 name: "Node-RED"
+description: "Node-RED with bundled Mosquitto Broker"
 type: "sw.application"
 assets:
-  - url: "https://github.com/Razikus/balena-nodered"
-    name: "repository"
-  - url: "https://raw.githubusercontent.com/Razikus/balena-nodered/main/logo.png"
-    name: "logo"
+  repository:
+    type: "blob.asset"
+    data:
+      url: "https://github.com/Razikus/balena-nodered"
+  logo:
+    type: "blob.asset"
+    data:
+      url: "https://raw.githubusercontent.com/Razikus/balena-nodered/main/logo.png"
 data:
-  description: "Node-RED with bundled Mosquitto Broker"
   defaultDeviceType: "raspberry-pi"
   supportedDeviceTypes:
     - "raspberry-pi"
