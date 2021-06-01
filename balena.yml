@@ -1,6 +1,16 @@
 name: "Node-RED"
-description: "Node-RED with bundled Mosquitto Broker"
 type: "sw.application"
+description: >-
+  Node-RED is a flow-based development tool for visual programming bundled Mosquitto Broker.
+joinable: false
+post-provisioning: >-
+  ## Usage instructions
+  
+  This project contains Node-RED with MQTT preinstalled. Access to Node-RED panel via the device local ip http://IP:80
+
+  Mosquitto has websocket port enabled by default on 9001
+  
+  For detailed instructions and contributions check out the [readme here](https://github.com/Razikus/balena-nodered).
 assets:
   repository:
     type: "blob.asset"
